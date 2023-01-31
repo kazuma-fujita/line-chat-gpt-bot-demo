@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-linechatgptbotdemo-dev-190357-authRole",
+      "UnauthRoleArn": "arn:aws:iam::179333317237:role/amplify-linechatgptbotdemo-dev-190357-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::179333317237:role/amplify-linechatgptbotdemo-dev-190357-authRole",
+      "Region": "ap-northeast-1",
+      "DeploymentBucketName": "amplify-linechatgptbotdemo-dev-190357-deployment",
+      "UnauthRoleName": "amplify-linechatgptbotdemo-dev-190357-unauthRole",
+      "StackName": "amplify-linechatgptbotdemo-dev-190357",
+      "StackId": "arn:aws:cloudformation:ap-northeast-1:179333317237:stack/amplify-linechatgptbotdemo-dev-190357/94938410-a14e-11ed-9c2e-06c451721d5f",
+      "AmplifyAppId": "d2uom1q8k1be5p"
+    },
+    "categories": {
+      "function": {
+        "lineChatGPTBotDemoFunction": {}
+      }
+    }
+  }
+}
