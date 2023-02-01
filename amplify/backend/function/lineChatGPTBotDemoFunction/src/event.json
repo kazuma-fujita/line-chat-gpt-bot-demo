@@ -1,1 +1,20 @@
-{ "test": "event" }
+{
+  "destination": "XXXXXXXXXXXXXXXX",
+  "events": [
+    {
+      "type": "message",
+      "message": {
+        "type": "text",
+        "id": "XXXXXXXXXXXXXXXX",
+        "text": "status"
+      },
+      "timestamp": 1647935919213,
+      "source": {
+        "type": "user",
+        "userId": "XXXXXXXXXXXXXXXX"
+      },
+      "replyToken": "XXXXXXXXXXXXXXXX",
+      "mode": "active"
+    }
+  ]
+}

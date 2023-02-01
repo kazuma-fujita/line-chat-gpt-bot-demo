@@ -38,6 +38,14 @@
           "resourceName": "lineChatGPTBotDemoFunction"
         }
       ]
+    },
+    "AMPLIFY_function_lineChatGPTBotDemoFunction_secretsPathAmplifyAppId": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "lineChatGPTBotDemoFunction"
+        }
+      ]
     }
   }
 }
