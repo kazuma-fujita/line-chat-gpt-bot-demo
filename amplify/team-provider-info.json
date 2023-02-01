@@ -13,7 +13,13 @@
     },
     "categories": {
       "function": {
-        "lineChatGPTBotDemoFunction": {}
+        "lineChatGPTBotDemoFunction": {
+          "deploymentBucketName": "amplify-linechatgptbotdemo-dev-190357-deployment",
+          "s3Key": "amplify-builds/lineChatGPTBotDemoFunction-424f422b445553436831-build.zip"
+        }
+      },
+      "api": {
+        "linechatbotapi": {}
       }
     }
   }

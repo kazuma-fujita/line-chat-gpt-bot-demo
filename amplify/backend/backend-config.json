@@ -21,5 +21,23 @@
       "providerPlugin": "awscloudformation",
       "service": "Lambda"
     }
+  },
+  "parameters": {
+    "AMPLIFY_function_lineChatGPTBotDemoFunction_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "lineChatGPTBotDemoFunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_lineChatGPTBotDemoFunction_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "lineChatGPTBotDemoFunction"
+        }
+      ]
+    }
   }
 }
