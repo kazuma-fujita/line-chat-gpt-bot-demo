@@ -23,6 +23,14 @@
     }
   },
   "parameters": {
+    "AMPLIFY_function_lineChatGPTBotDemoFunction_baseSecretPath": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "lineChatGPTBotDemoFunction"
+        }
+      ]
+    },
     "AMPLIFY_function_lineChatGPTBotDemoFunction_deploymentBucketName": {
       "usedBy": [
         {

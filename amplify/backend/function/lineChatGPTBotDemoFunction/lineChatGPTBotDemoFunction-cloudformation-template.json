@@ -18,6 +18,9 @@
     },
     "secretsPathAmplifyAppId": {
       "Type": "String"
+    },
+    "baseSecretPath": {
+      "Type": "String"
     }
   },
   "Conditions": {
@@ -116,6 +119,31 @@
                   "OPEN_AI_API_KEY"
                 ]
               ]
+            },
+            "LINE_CHANNEL_SECRET": {
+              "Fn::Join": [
+                "",
+                [
+                  {
+                    "Fn::Sub": [
+                      "/amplify/${appId}/${env}/AMPLIFY_${functionName}_",
+                      {
+                        "appId": {
+                          "Ref": "secretsPathAmplifyAppId"
+                        },
+                        "env": {
+                          "Ref": "env"
+                        },
+                        "functionName": "lineChatGPTBotDemoFunction"
+                      }
+                    ]
+                  },
+                  "LINE_CHANNEL_SECRET"
+                ]
+              ]
+            },
+            "BASE_SECRET_PATH": {
+              "Ref": "baseSecretPath"
             }
           }
         },
