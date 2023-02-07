@@ -16,5 +16,4 @@ def get_secret(secret_key):
         )
         return response['Parameter']['Value']
     except ClientError as e:
-        logger.error(e)
         raise e

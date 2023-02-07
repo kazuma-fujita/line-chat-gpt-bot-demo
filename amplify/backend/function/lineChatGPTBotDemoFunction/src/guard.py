@@ -14,5 +14,4 @@ def verify_request(event):
     hash = hmac.new(const.LINE_CHANNEL_SECRET.encode('utf-8'), body.encode('utf-8'), hashlib.sha256).digest()
     signature = base64.b64encode(hash)
     if signature != x_line_signature.encode():
-        logger.error('verify error')
-        raise Exception
+        raise Exception("Request verification failed. Request came from a non-LINE server source.")

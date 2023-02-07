@@ -12,7 +12,6 @@ def handler(event, context):
     try:
         guard.verify_request(event)
         line_api.reply_message(event)
-    # エラーが起きた場合
     except Exception as e:
         logger.error(e)
         # エラーが発生した際も200を返却
