@@ -11,15 +11,15 @@
     "CloudFront-Viewer-ASN": "38631",
     "CloudFront-Viewer-Country": "JP",
     "content-type": "application/json; charset=utf-8",
-    "Host": "1n20aqj4i9.execute-api.ap-northeast-1.amazonaws.com",
+    "Host": "XXXXXXXX.execute-api.ap-northeast-1.amazonaws.com",
     "User-Agent": "LineBotWebhook/2.0",
-    "Via": "2.0 60c50cffacae235c43f510af74c11cda.cloudfront.net (CloudFront)",
-    "X-Amz-Cf-Id": "VIgDXVumxjpr6U-kycTppHM_7toIzjUK18ETDlyyHcoSTsCRYJ4bZg==",
-    "X-Amzn-Trace-Id": "Root=1-63db4c01-5ace8f454b058c1e5d59683d",
-    "X-Forwarded-For": "147.92.149.168, 70.132.8.135",
+    "Via": "2.0 XXXXXXXXXXXXXXXXX.cloudfront.net (CloudFront)",
+    "X-Amz-Cf-Id": "XXXXXXXX-kycTppHM_7toIzjUK18ETDlyyHcoSTsCRYJ4bZg==",
+    "X-Amzn-Trace-Id": "Root=1-XXXXXXXXXXXXXXXXX-5ace8f454b058c1e5d59683d",
+    "X-Forwarded-For": "XXX.92.149.168, XX.132.8.135",
     "X-Forwarded-Port": "443",
     "X-Forwarded-Proto": "https",
-    "x-line-signature": "5XUREx7T8l+tlRE3VE1hnI2WotQ6QXsvoBgU23g4xco="
+    "x-line-signature": "XXXXXXXXXXXXX+tlRE3VE1hnI2WotQ6QXsvoBgU23g4xco="
   },
   "multiValueHeaders": {
     "CloudFront-Forwarded-Proto": ["https"],
@@ -30,39 +30,39 @@
     "CloudFront-Viewer-ASN": ["38631"],
     "CloudFront-Viewer-Country": ["JP"],
     "content-type": ["application/json; charset=utf-8"],
-    "Host": ["1n20aqj4i9.execute-api.ap-northeast-1.amazonaws.com"],
+    "Host": ["XXXXXXXX.execute-api.ap-northeast-1.amazonaws.com"],
     "User-Agent": ["LineBotWebhook/2.0"],
-    "Via": ["2.0 60c50cffacae235c43f510af74c11cda.cloudfront.net (CloudFront)"],
-    "X-Amz-Cf-Id": ["VIgDXVumxjpr6U-kycTppHM_7toIzjUK18ETDlyyHcoSTsCRYJ4bZg=="],
-    "X-Amzn-Trace-Id": ["Root=1-63db4c01-5ace8f454b058c1e5d59683d"],
-    "X-Forwarded-For": ["147.92.149.168, 70.132.8.135"],
+    "Via": ["2.0 XXXXXXXXXXXXXXXXX.cloudfront.net (CloudFront)"],
+    "X-Amz-Cf-Id": ["XXXXXXXX-kycTppHM_7toIzjUK18ETDlyyHcoSTsCRYJ4bZg=="],
+    "X-Amzn-Trace-Id": ["Root=1-XXXXXXXXXX-5ace8f454b058c1e5d59683d"],
+    "X-Forwarded-For": ["XXX.92.149.168, XX.132.8.135"],
     "X-Forwarded-Port": ["443"],
     "X-Forwarded-Proto": ["https"],
-    "x-line-signature": ["5XUREx7T8l+tlRE3VE1hnI2WotQ6QXsvoBgU23g4xco="]
+    "x-line-signature": ["XXXXXXXX+tlRE3VE1hnI2WotQ6QXsvoBgU23g4xco="]
   },
   "queryStringParameters": null,
   "multiValueQueryStringParameters": null,
   "pathParameters": null,
   "stageVariables": null,
   "requestContext": {
-    "resourceId": "eb55zy",
+    "resourceId": "eb55XX",
     "resourcePath": "/v1/line/bot/message/reply",
     "httpMethod": "POST",
-    "extendedRequestId": "fsjQPErnNjMF3aQ=",
+    "extendedRequestId": "XXXXXXErnNjMF3aQ=",
     "requestTime": "02/Feb/2023:05:37:05 +0000",
     "path": "/dev/v1/line/bot/message/reply",
     "accountId": "179333317237",
     "protocol": "HTTP/1.1",
     "stage": "dev",
-    "domainPrefix": "1n20aqj4i9",
+    "domainPrefix": "XXXXXXXX",
     "requestTimeEpoch": 1675316225357,
-    "requestId": "84791622-c9d8-46b8-b65e-c5799b8a57f0",
+    "requestId": "XXXXXXXX-c9d8-46b8-b65e-c5799b8a57f0",
     "identity": {
       "cognitoIdentityPoolId": null,
       "accountId": null,
       "cognitoIdentityId": null,
       "caller": null,
-      "sourceIp": "147.92.149.168",
+      "sourceIp": "XXX.92.149.168",
       "principalOrgId": null,
       "accessKey": null,
       "cognitoAuthenticationType": null,
@@ -71,11 +71,11 @@
       "userAgent": "LineBotWebhook/2.0",
       "user": null
     },
-    "domainName": "1n20aqj4i9.execute-api.ap-northeast-1.amazonaws.com",
-    "apiId": "1n20aqj4i9"
+    "domainName": "XXXXXXXX.execute-api.ap-northeast-1.amazonaws.com",
+    "apiId": "XXXXXXXX"
   },
   "body": {
-    "destination": "U92b1d1a447671b806a9eb52a22ee4ef4",
+    "destination": "XXXXXXXXXXX671b806a9eb52a22ee4ef4",
     "events": [
       {
         "type": "message",
@@ -84,14 +84,14 @@
           "id": "17573821279580",
           "text": "ChatGPTの特徴は？"
         },
-        "webhookEventId": "01GR8A1S7N8CED1VMSBM8TXSYP",
+        "webhookEventId": "XXXXXXXXXXXN8CED1VMSBM8TXSYP",
         "deliveryContext": { "isRedelivery": false },
         "timestamp": 1675316224777,
         "source": {
           "type": "user",
-          "userId": "U85fe01980fdc0ab95c536b858bc275dc"
+          "userId": "XXXXXXXXXXXX80fdc0ab95c536b858bc275dc"
         },
-        "replyToken": "b33128a9fe054435a27491dbf691a6db",
+        "replyToken": "XXXXXXXXXXX9fe054435a27491dbf691a6db",
         "mode": "active"
       }
     ]

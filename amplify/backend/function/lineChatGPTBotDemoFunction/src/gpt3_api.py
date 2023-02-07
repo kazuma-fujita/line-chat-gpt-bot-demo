@@ -8,7 +8,8 @@ HEADERS = {
     'Authorization': f'Bearer {const.OPEN_AI_API_KEY}'
 }
 MAX_TOKENS = 1000
-TEMPERATURE = 0.5
+TEMPERATURE = 0.6
+GENERATE_COMPLETIONS_COUNT = 1
 
 
 def completions(prompt):
@@ -17,7 +18,7 @@ def completions(prompt):
         'prompt': prompt,
         'model': GPT3_MODEL,
         'max_tokens': MAX_TOKENS,
-        'n': 1,
+        'n': GENERATE_COMPLETIONS_COUNT,
         'stop': None,
         'temperature': TEMPERATURE
     }

@@ -15,7 +15,7 @@
       "function": {
         "lineChatGPTBotDemoFunction": {
           "deploymentBucketName": "amplify-linechatgptbotdemo-dev-190357-deployment",
-          "s3Key": "amplify-builds/lineChatGPTBotDemoFunction-453863434446396b5078-build.zip",
+          "s3Key": "amplify-builds/lineChatGPTBotDemoFunction-414730734f2b4c795274-build.zip",
           "secretsPathAmplifyAppId": "d2uom1q8k1be5p",
           "baseSecretPath": "/amplify/d2uom1q8k1be5p/dev/AMPLIFY_lineChatGPTBotDemoFunction_"
         }
