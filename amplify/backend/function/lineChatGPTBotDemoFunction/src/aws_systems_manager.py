@@ -1,11 +1,10 @@
-import logging
 import boto3
 from botocore.exceptions import ClientError
+import app_logger
+
+logger = app_logger.init()
 
 AWS_REGION = "ap-northeast-1"
-
-logger = logging.getLogger()
-logger.setLevel(logging.INFO)
 
 
 def get_secret(secret_key):
@@ -18,4 +17,4 @@ def get_secret(secret_key):
         return response['Parameter']['Value']
     except ClientError as e:
         logger.error(e)
-        raise
+        raise e

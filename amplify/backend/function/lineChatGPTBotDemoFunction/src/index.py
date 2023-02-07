@@ -1,10 +1,9 @@
 import json
-import logging
 import guard
 import line_api
+import app_logger
 
-logger = logging.getLogger()
-logger.setLevel(logging.INFO)
+logger = app_logger.init()
 
 
 def handler(event, context):
@@ -15,11 +14,9 @@ def handler(event, context):
         line_api.reply_message(event)
     # エラーが起きた場合
     except Exception as e:
-        print('Error')
-        print(e)
-        # LINE Developers記載によるとエラーが発生した際も200を返却
+        logger.error(e)
+        # エラーが発生した際も200を返却
         # https://developers.line.biz/ja/reference/messaging-api/#response
-        # return {'statusCode': 500, 'body': json.dumps('Exception occurred.')}
-        return {'statusCode': 200, 'body': json.dumps('Exception occurred.')}
+        return {'statusCode': 200, 'body': json.dumps(f'Exception occurred: {e}')}
 
     return {'statusCode': 200, 'body': json.dumps('Reply ended normally.')}

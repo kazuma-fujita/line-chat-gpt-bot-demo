@@ -1,12 +1,11 @@
 import json
-import logging
 from linebot import LineBotApi
 from linebot.models import TextSendMessage
 import const
 import gpt3_api
+import app_logger
 
-logger = logging.getLogger()
-logger.setLevel(logging.INFO)
+logger = app_logger.init()
 
 
 def reply_message(event):
@@ -18,18 +17,15 @@ def reply_message(event):
             replyToken = event_body['events'][0]['replyToken']
             # 受信メッセージ
             prompt = event_body['events'][0]['message']['text']
-            print(replyToken)
-            print(prompt)
+            logger.info(prompt)
             # GPT-3
             completed_text = gpt3_api.completions(prompt)
-            print(completed_text)
             response_message = completed_text.strip()
-            print(response_message)
+            logger.info(response_message)
             # チャネルアクセストークンを使用して、LineBotApiのインスタンスを作成
             line_bot_api = LineBotApi(const.LINE_CHANNEL_ACCESS_TOKEN)
             # メッセージを返信
             line_bot_api.reply_message(replyToken, TextSendMessage(text=response_message))
 
-    # エラーが起きた場合
     except Exception as e:
         raise e

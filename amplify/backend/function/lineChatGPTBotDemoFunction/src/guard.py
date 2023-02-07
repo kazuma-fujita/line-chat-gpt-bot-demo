@@ -1,12 +1,10 @@
-import logging
 import hashlib
 import hmac
 import base64
 import const
+import app_logger
 
-
-logger = logging.getLogger()
-logger.setLevel(logging.INFO)
+logger = app_logger.init()
 
 
 def verify_request(event):
